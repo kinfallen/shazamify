@@ -1,5 +1,5 @@
 # shazamify
-Automatically get songs from Shazam's Charts and pipe them into a Spotify Playlist. Download the Python scripts, edit the CSV and Authorisation variables, and run them in terminal (Python required) or Python Launcher.
+Automatically get songs from the [Shazam Chart's website](https://www.shazam.com/charts/) and pipe them into a Spotify Playlist. Download the Python scripts, edit the CSV and Authorisation variables, and run them in terminal (Python required) or Python Launcher.
 
 Currently, the script is set up so as to ignore duplicate songs as well as songs that aren't from 2023. The hope is to start these in 2024 on a weekly cron job and have a cumulative list of tracks over the year.
 
