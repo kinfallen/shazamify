@@ -3,8 +3,9 @@ Automatically get songs from Shazam's Charts and pipe them into a Spotify Playli
 
 Currently, the script is set up so as to ignore duplicate songs as well as songs that aren't from 2023. The hope is to start these in 2024 on a weekly cron job and have a cumulative list of tracks over the year.
 
+# How to use the scripts
 
-# Set up your Spotify Dev account here using these instructions
+## Set up your Spotify Dev account here using these instructions
 https://developer.spotify.com/documentation/web-api/tutorials/getting-started
 
 # Constants 
