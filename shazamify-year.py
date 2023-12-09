@@ -11,6 +11,9 @@ local_folder = "/Users/You/Documents/Path/"
 file_name = "file.csv"
 local_path = os.path.join(local_folder, file_name)
 
+# Release year constant
+RELEASE_YEAR = '2023'
+
 # Spotify API credentials
 SPOTIPY_CLIENT_ID = "clientID"
 SPOTIPY_CLIENT_SECRET = "clientSecret"
@@ -75,11 +78,11 @@ def fuzzy_match(query, choices, threshold=0.8):
 
     return matches
 
-# Function to check if a track is released in 2023
-def is_track_released_in_2023(track_uri):
+# Function to check if a track is released in a specific year
+def is_track_released_in_year(track_uri, release_year):
     track_info = sp.track(track_uri)
     release_date = track_info['album']['release_date']
-    return release_date.startswith('2023')
+    return release_date.startswith(release_year)
 
 # Function to check for duplicates
 def is_track_duplicate(track, existing_tracks, sp):
